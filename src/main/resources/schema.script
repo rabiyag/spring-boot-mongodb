@@ -1,0 +1,12 @@
+## DB create schema
+
+use employee_db;
+db.createUser(
+  {
+    user: "YOUR_USER_NAME",
+    pwd: "YOUR_PASSWORD",
+    roles : [
+      { role: "readWrite", db: "employee_db" }  
+    ]
+  }
+);
